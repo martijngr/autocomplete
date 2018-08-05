@@ -1038,12 +1038,12 @@
 				$dropdown
 					.hide();
 
+				if (options.autoselect) {
+					$input.val($hint.val());
+				}
+
 				$hint
 					.val('');	
-
-				if (!options.autoselect) {
-					$input.val(currentValue);
-				}
 
 				iOpen = false;
 
